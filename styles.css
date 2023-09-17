@@ -1,0 +1,184 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+header {
+  height: 8vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  width: 60px;
+}
+
+section {
+  min-height: 90vh;
+}
+
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #fefefe;
+}
+
+.cta {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cta a {
+  text-decoration: none;
+}
+
+.cta button {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.cta-whatsapp button {
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+}
+
+.cta-whatsapp button:hover {
+  background-color: #128c7e;
+}
+
+.cta-maps button {
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+}
+
+.cta-maps button:hover {
+  background-color: #1967d2;
+}
+
+.cta img {
+  width: 20px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-address {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 10px;
+  width: 45%;
+}
+
+.footer-copyright {
+  font-size: 10px;
+  color: #aaa;
+}
+
+@media screen and (min-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slide img {
+    max-height: 92vh;
+    object-fit: cover;
+  }
+
+  .slide:nth-child(1) img {
+    content: url("/images/chuches2.png");
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slide:nth-child(2) img {
+    content: url("/images/libreria2.png");
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slide:nth-child(3) img {
+    content: url("/images/grupal2.png");
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slide:nth-child(4) img {
+    content: url("/images/helado2.png");
+    height: 100%;
+    object-fit: cover;
+  }
+}
